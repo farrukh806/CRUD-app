@@ -1,0 +1,56 @@
+i.icon{
+    font-size: 3em;
+}
+
+.ui.text.container{
+    margin-top: 4.0em;
+} 
+.ui.fixed.menu{
+    height: 56px;
+}
+#delete{
+    display: inline;
+}
+#date{
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+p:last-child{
+    margin-bottom: 16px;
+}
+.description{
+    margin-top: 13px;
+}
+
+.ui.attached.inverted.menu{
+    display:flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+}
+.header .item{
+    width: 18px;
+}
+@media screen and (max-width:346px){
+    .ui.attached.inverted.menu{
+        font-size: 12px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .ui.attached.inverted.menu a{
+        width: 19%;
+        margin-right: 10px;
+        padding-right: 15px;
+        font-size:14px;
+        
+    }
+    .ui.attached.inverted.menu .header .item{
+        margin-right:0;
+        width:10px;
+        height:10px;
+        justify-content: center;
+    }
+   
+}

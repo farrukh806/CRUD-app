@@ -1,0 +1,32 @@
+<%- include ('partials/header') -%>
+
+<div class="ui main text huge header container">
+	<div class="ui header huge">RESTful Blog App</div>
+</div>
+
+<div class="ui main text attached container segment">
+	<div class="ui divided items">
+		<% data.forEach(function(blog){ %>
+		<div class="item">
+			<div class="content">
+				<a class="header" href="/blogs/<%= blog.id %>"
+					><%= blog.title %></a
+				>
+				<div class="description">
+					<p><%- blog.description.substring(0, 100) %>...</p>
+				</div>
+				<div class="extra">
+					<a
+						class="ui floated basic violet button"
+						href="/blogs/<%= blog.id %>"
+						>Read more<i class="icon chevron right"></i
+					></a>
+				</div>
+			</div>
+		</div>
+
+		<% }); %>
+	</div>
+</div>
+
+<%- include('partials/footer') -%>
