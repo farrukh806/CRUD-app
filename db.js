@@ -1,8 +1,9 @@
 const Pool = require('pg').Pool;
-
+const dotenv = require('dotenv');
+dotenv.config();
 const pool = new Pool({
 	user: 'postgresql',
-	host: 'postgresql-83592-0.cloudclusters.net',
+	host: process.env.HOST,
 	database: 'blog',
 	password: 'postgresql',
 	port: 18692
