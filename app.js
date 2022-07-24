@@ -11,4 +11,4 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 app.use(blogRoutes);
 
-app.listen(port, () => console.log('Server started at port ' + PORT));
+app.listen(port, () => console.log('Server started at port ' + port));
